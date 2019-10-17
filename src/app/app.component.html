@@ -1,0 +1,5 @@
+<div class="container">
+  <app-header (featureSelected)="feature($event)"></app-header>
+  <app-recipe *ngIf="loadedFeature==='rec'"></app-recipe>
+  <app-shopping-list *ngIf="loadedFeature !=='rec'"></app-shopping-list>
+</div>
